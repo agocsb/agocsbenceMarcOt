@@ -5,8 +5,8 @@ using UnityEngine;
     [SerializeField] float speed;
     void Start()
     {
-        Debug.Log("Hello Unity");
-        Debug.Log("I'm " + name);
+        // Debug.Log("Hello Unity");
+        // Debug.Log("I'm " + name);
     }
     void Update()
     {
