@@ -17,7 +17,7 @@ public class vectorPractice : MonoBehaviour
 
         float vectorLength = summa.magnitude; //gyok180
 
-        Vector2 normalised = summa.normalized; //
+        Vector2 normalised = summa.normalized; //egy egyseg hosszusagu vektor
 
     }
 }
