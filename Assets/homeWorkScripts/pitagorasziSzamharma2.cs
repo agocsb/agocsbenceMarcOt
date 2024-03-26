@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class pitagorasziSzamharma2 : MonoBehaviour
 {
-    [SerializeField] float a, b, Catfogo;
+    /*[SerializeField] float a, b, Catfogo;
     [SerializeField] bool derekszogu;
     void OnValidate()
     {
@@ -15,5 +15,5 @@ public class pitagorasziSzamharma2 : MonoBehaviour
         {
             derekszogu = false;
         }
-    }
+    }*/
 }

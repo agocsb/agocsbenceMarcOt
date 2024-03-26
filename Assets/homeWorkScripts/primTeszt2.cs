@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class primTeszt2 : MonoBehaviour
 {
-    [SerializeField] int number;
+    /*[SerializeField] int number;
     //[SerializeField] int o = 0; //osztok szama az egyen kivul
     [SerializeField] bool prim;
     void OnValidate()
@@ -18,13 +18,13 @@ public class primTeszt2 : MonoBehaviour
         }
         
 
-        /*if (o >= 2)
+        if (o >= 2)
         {
             Debug.Log($"{number} nem  primszam.");
         }
         else if (o < 2)
         {
             Debug.Log($"{number} primszam.");
-        }*/
-    }
+        }
+    }*/
 }

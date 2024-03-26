@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BoolFunctions : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /*// Start is called before the first frame update
     void Start()
     {
         bool b1 = true;
@@ -48,6 +48,6 @@ public class BoolFunctions : MonoBehaviour
 
 
 
-    }
+    }*/
 
 }
