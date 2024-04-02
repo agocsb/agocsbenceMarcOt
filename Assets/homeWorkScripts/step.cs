@@ -15,7 +15,7 @@ public class step : MonoBehaviour
 
         Vector3 input = new Vector3(inputH, inputV, 0).normalized;  
         
-        transform.position += Time.deltaTime * input * speed;
+        transform.position += input * speed * Time.deltaTime;
 
         /* Quaternion LastRotate = transform.rotation;
 
