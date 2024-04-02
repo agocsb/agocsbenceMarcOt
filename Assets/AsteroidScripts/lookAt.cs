@@ -27,6 +27,7 @@ public class LookAt : MonoBehaviour
         }
 
         transform.position += step;*/
-        transform.position = Vector3.MoveTowards(self, other, speed * Time.deltaTime);
+
+        // transform.position = Vector3.MoveTowards(self, other, speed * Time.deltaTime);
     }
 }

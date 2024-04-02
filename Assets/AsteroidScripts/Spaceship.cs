@@ -18,7 +18,7 @@ public class Spaceship : MonoBehaviour
         velocity = Vector3.ClampMagnitude(velocity, speedLimit);
         
 
-        Debug.Log($"h = {h}, y = {v}");        
+        Debug.Log($"h = {h}, v = {v}");        
         //direction.Normalize();
 
         Vector3 step = velocity * Time.deltaTime * acceleration;
