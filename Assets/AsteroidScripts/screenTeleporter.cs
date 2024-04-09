@@ -1,37 +1,61 @@
 using UnityEngine;
 
-public class screenTeleporter : MonoBehaviour
+public class ScreenTeleporter : MonoBehaviour
 {
-    Collider2D colliderTwoD;
     SpriteRenderer spriteRenderer;
-    Camera camera;
-    
+    new Collider2D collider2D;
+    new Camera camera;
+
     void Start()
     {
-        colliderTwoD = GetComponent<Collider2D>(); 
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        //komponensek eltarolasa
         camera = Camera.main;
-        //kamera eltarolasa
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        collider2D = GetComponent<Collider2D>();
     }
 
     void Update()
     {
-        Vector2 cameraPos = camera.transform.position;
-        Vector2 cameraSize = new Vector2(camera.orthographicSize * camera.aspect, camera.orthographicSize);
 
-        Rect cameraRect = new Rect(cameraPos - cameraSize, cameraSize * 2);
-        Bounds objectBounds;
+        Vector2 cameraCenter = camera.transform.position;
+        Vector2 cameraSize = new(camera.orthographicSize * camera.aspect, camera.orthographicSize);
+
+        Rect cameraRect = new(cameraCenter - cameraSize, cameraSize * 2);
+        Bounds objectBounds = collider2D.bounds;
+
+        float yJump = (cameraSize.y * 2 + objectBounds.size.y);
+        float xJump = (cameraSize.x * 2 + objectBounds.size.x);
+
+        if (objectBounds.min.y > cameraRect.yMax)
+        {
+            transform.position += Vector3.down * yJump;
+            Physics2D.SyncTransforms();
+        }
+        if (objectBounds.max.y < cameraRect.yMin)
+        {
+            transform.position += Vector3.up * yJump;
+            Physics2D.SyncTransforms();
+        }
+        if (objectBounds.min.x > cameraRect.xMax)
+        {
+            transform.position += Vector3.left * xJump;
+            Physics2D.SyncTransforms();
+        }
+        if (objectBounds.max.x < cameraRect.xMin)
+        {
+            transform.position += Vector3.right * xJump;
+            Physics2D.SyncTransforms();
+        }
+
+        // INNEN FOLYTATJUK
     }
 
     void OnDrawGizmos()
     {
-        if (spriteRenderer == null)
-            return;
+        if (collider2D == null) return;
 
-        Bounds bounds = colliderTwoD.bounds;
+        Bounds bounds = collider2D.bounds;  // Befoglaló téglatest
 
-        Gizmos.color = Color.magenta;
+        Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(bounds.center, bounds.size);
     }
 }
