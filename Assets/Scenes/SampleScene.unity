@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &377995680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377995681}
+  - component: {fileID: 377995682}
+  m_Layer: 0
+  m_Name: hwGizmo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &377995681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377995680}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.293, y: 2.329, z: 9.57}
+  m_LocalScale: {x: 0.527701, y: 0.527701, z: 0.527701}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 624718829}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377995682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377995680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cae76646a41734195d54ae81b9c09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  length: 0.5
 --- !u!1 &476965048
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &476965049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &576756396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +440,7 @@ Transform:
   - {fileID: 476965050}
   - {fileID: 1249675330}
   - {fileID: 1243439277}
+  - {fileID: 377995681}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &624718831
@@ -585,7 +631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &745433869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1243439277
 Transform:
   m_ObjectHideFlags: 0
@@ -917,7 +963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1249675321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,10 +996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe3a225c8e1a36448749696d68b5d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: 3
-  b: 4
-  Catfogo: 54
-  derekszogu: 0
 --- !u!114 &1249675323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,8 +1124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d71704ce78d7446bd56408a5308571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 0
-  prim: 1
 --- !u!114 &1249675332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,7 +1185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1622474948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,7 +1382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1884281164
 MonoBehaviour:
   m_ObjectHideFlags: 0
