@@ -6,6 +6,7 @@ public class Spaceship : MonoBehaviour
     [SerializeField] float acceleration = 5;
     [SerializeField] float angularSpeed = 180;
     [SerializeField] float drag = 0.5f;
+    [SerializeField] Rigidbody2D rb;
 
     Vector3 velocity;
 
@@ -58,7 +59,7 @@ public class Spaceship : MonoBehaviour
     /*
     using UnityEngine;
 
-    public class Spaceship : MonoBehaviour
+    public class SpaceshipPhysical : MonoBehaviour
     {
     [SerializeField] float maxSpeed = 5;       // m/s
     [SerializeField] float acceleration = 5;   // m/s^2

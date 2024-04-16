@@ -19,18 +19,22 @@ public class projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D hit)
     {
-        damageable hasHealth = hit.GetComponent<damageable>();
+        HealthObject hasHealth = hit.GetComponent<HealthObject>();
 
-        float startingHealth = hasHealth.startingHealth;
-        float currentHealth = hasHealth.currentHealth;
-        float healtPercentage = currentHealth / startingHealth;
+        //damageable hasHealth = hit.GetComponent<damageable>();
+
+        //float startingHealth = hasHealth.startingHealth;
+        //float currentHealth = hasHealth.currentHealth;
+        //float healtPercentage = currentHealth / startingHealth;
 
         if (hasHealth != null)
         {
-            hasHealth.currentHealth -= dmg;
-            hasHealth.healthBar.value = hasHealth.currentHealth / hasHealth.startingHealth;
+            hasHealth.Damage(dmg);
+            //hasHealth.reduceHealthbar();
 
-            Debug.Log($"{hit.gameObject}: {hasHealth.currentHealth} / {hasHealth.startingHealth} = {healtPercentage}, {hasHealth.currentHealth / hasHealth.startingHealth}");
+            Destroy(gameObject);
+
+            //Debug.Log($"{hit.gameObject}: {hasHealth.currentHealth} / {hasHealth.startingHealth} = {healtPercentage}, {hasHealth.currentHealth / hasHealth.startingHealth}");
         }
     }
 }
