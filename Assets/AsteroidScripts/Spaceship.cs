@@ -38,6 +38,8 @@ public class Spaceship : MonoBehaviour
         // max sebesseg
         velocity = Vector3.ClampMagnitude(velocity, speedLimit);
 
+        
+
         // ----------------------------
 
         /*
