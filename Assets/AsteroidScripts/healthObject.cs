@@ -6,9 +6,12 @@ public class HealthObject : MonoBehaviour
     [SerializeField] int collisionDamage;
 
     int currentHp;
+
+    bool isSetup = false;
     void Start()
     {
         currentHp = startHp;
+        isSetup = true;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -18,6 +21,8 @@ public class HealthObject : MonoBehaviour
 
     public void Damage(int damage)
     {
+        if (isSetup != true)
+            return;
         if (damage < 0)
             return;
 

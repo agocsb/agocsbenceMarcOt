@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 8716883893263433447}
   - component: {fileID: 7958474111373728954}
   m_Layer: 0
-  m_Name: Asteroid_02_3
+  m_Name: _HealthBarAsteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
