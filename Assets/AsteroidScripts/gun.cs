@@ -15,7 +15,7 @@ public class gun : MonoBehaviour
         spaceshipCollider = spaceship.GetComponent<PolygonCollider2D>();
         float spaceshipRadius = spaceshipCollider.bounds.size.y / 2;
 
-        transform.position = spaceship.transform.position + spaceship.transform.up * (spaceshipRadius + projectileRadius);
+        //transform.position = spaceship.transform.position + spaceship.transform.up * (spaceshipRadius + projectileRadius);
     }
 
     void Update()

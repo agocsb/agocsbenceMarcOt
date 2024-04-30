@@ -236,5 +236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b25b9317a2b6d944b7d384536e0aea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHp: 25
+  startHp: 60
   collisionDamage: 0
+  spriteRenderer: {fileID: 1351621277295532953}
+  sprites:
+  - {fileID: 21300000, guid: 47793d233e0268247868d0dc2ece532f, type: 3}
+  - {fileID: 21300002, guid: 47793d233e0268247868d0dc2ece532f, type: 3}
+  - {fileID: 21300004, guid: 47793d233e0268247868d0dc2ece532f, type: 3}
